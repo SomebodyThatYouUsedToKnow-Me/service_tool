@@ -44,13 +44,13 @@ streamlit run app.py
 
 ## 🧩 Core Concepts
 
-- **Checks**  
+- **🔧 Checks**  
   Individual inspection items (numeric or boolean).
 
-- **Templates**  
+- **📦 Templates**  
   Reusable collections of checks (e.g. conveyor, drive unit, safety).
 
-- **Machines**  
+- **🏭 Machines**  
   Machines combine one or more templates and may optionally override limits.
 
 This structure keeps the system flexible, scalable, and clean.
@@ -61,60 +61,60 @@ This structure keeps the system flexible, scalable, and clean.
 
 ### ✅ Check Builder
 
-- Add and remove:
-  - **Numeric checks** (with min/max limits)
-  - **Boolean checks** (OK / Not OK)
-- Stored automatically in `checklist.json`
+- ➕ Add and ➖ remove:
+  - **🔢 Numeric checks** (with configurable min/max limits)
+  - **✔️ Boolean checks** (OK / Not OK)
+- 💾 Stored automatically in `checklist.json`
 
 ---
 
-### ✅ Template Builder
+### 📐 Template Builder
 
-- Create reusable templates
-- Assign multiple checks per template
-- Templates can be combined on a single machine
-- Safe behavior when **no templates exist**
-
----
-
-### ✅ Machine Builder
-
-- Add, edit, or delete machines
-- Assign multiple templates per machine
-- Optional machine-specific numeric overrides
-- Collapse / expand machines for a clean tablet UI
+- 🧱 Create reusable templates
+- 🔗 Assign multiple checks per template
+- 🧩 Combine multiple templates on a single machine
+- 🛡️ Safe behavior when **no templates exist**
 
 ---
 
-### ✅ Checklist Execution
+### 🏗️ Machine Builder
 
-- Dynamic checklist generation per machine
-- Numeric checks show:
+- ➕ Add, ✏️ edit, or 🗑️ delete machines
+- 🧩 Assign multiple templates per machine
+- ⚙️ Optional machine-specific numeric overrides
+- 📱 Collapse / expand machines for a clean tablet UI
+
+---
+
+### 📋 Checklist Execution
+
+- ⚡ Dynamic checklist generation per machine
+- 🔢 Numeric checks show:
   - ✅ Pass
   - ⚠️ Warning
   - ❌ Fail
-- Notes can be added per check
+- 📝 Notes can be added per check
 
 ---
 
-### ✅ PDF Export
+### 📄 PDF Export
 
-- Professional, customer-ready PDF reports
-- Includes:
-  - Service date
-  - Engineer name
-  - Job ID
-  - Machine results
-  - Check values and notes
-- Files saved automatically to `/exports`
+- 🧾 Professional, customer-ready PDF reports
+- 📌 Includes:
+  - 📅 Service date
+  - 👷 Engineer name
+  - 🆔 Job ID
+  - 🏭 Machine results
+  - 📊 Check values and notes
+- 💾 Files saved automatically to `/exports`
 
 ---
 
-### ✅ Summary View
+### 📊 Summary View
 
-- Overview of all machines in the service
-- Quick visual status per machine
-- Expand for detailed inspection results
+- 🧭 Overview of all machines in the service
+- 🚦 Quick visual status per machine
+- 🔍 Expand for detailed inspection results
 
 ## 💡 Tips & Best Practices
 
@@ -152,3 +152,32 @@ This structure keeps the system flexible, scalable, and clean.
 ## 📄 License
 
 MIT License – free to use and modify.
+
+## 🗺️ Roadmap
+
+Planned improvements and future ideas for the Machine Service Checklist project.
+
+### 🚧 Short-Term
+- 🖼️ Attach photos to individual checks  
+- 📝 Improved PDF layout with company branding options  
+- 📊 Better visual indicators for warning vs. fail conditions  
+
+---
+
+### 🔜 Mid-Term
+- 👤 User accounts for multiple engineers  
+- 🕒 Service history per machine  
+- 📂 Import / export configurations (JSON backup & restore)  
+
+---
+
+### 🚀 Long-Term
+- ☁️ Cloud database support for team usage  
+- 📱 Offline-first tablet support  
+- 🏭 Integration with CMMS / ERP systems  
+- 🤖 Predictive maintenance indicators based on historical data  
+
+---
+
+### 💡 Open to Ideas
+This project is actively evolving. Feature requests, improvements, and pull requests are welcome.
