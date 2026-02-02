@@ -36,8 +36,11 @@ It is especially suited for **tablet use on-site**.
 ```bash
 git clone https://github.com/SomebodyThatYouUsedToKnow-Me/service_tool
 cd machine-service-checklist
+
 pip install streamlit reportlab
+
 streamlit run app.py
+```
 
 ## 🧩 Core Concepts
 
