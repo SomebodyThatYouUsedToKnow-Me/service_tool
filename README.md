@@ -153,6 +153,8 @@ This structure keeps the system flexible, scalable, and clean.
 
 MIT License – free to use and modify.
 
+---
+
 ## 🗺️ Roadmap
 
 Planned improvements and future ideas for the Machine Service Checklist project.
